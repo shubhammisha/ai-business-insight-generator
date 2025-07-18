@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Successful</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f6f8fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 40px 32px 32px 32px;
+            text-align: center;
+            max-width: 400px;
+        }
+        .success {
+            color: #2196f3;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .filename {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 18px;
+        }
+        h2 {
+            color: #1976d2;
+            margin-bottom: 18px;
+            font-size: 1.6rem;
+        }
+        .download-btn {
+            background: #1976d2;
+            color: #fff;
+            padding: 14px 36px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 18px;
+        }
+        .download-btn:hover {
+            background: #1565c0;
+            box-shadow: 0 4px 16px rgba(25, 118, 210, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success">✅</div>
+        <h2>Upload Successful!</h2>
+        <div class="filename">File Uploaded: <span>{{ filename }}</span></div>
+        <a href="/download-pdf" class="download-btn">⬇️ Download PDF</a>
+    </div>
+</body>
+</html> 
